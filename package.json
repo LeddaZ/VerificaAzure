@@ -1,0 +1,49 @@
+{
+  "name": "verificaazure",
+  "version": "1.0.0",
+  "description": "Verifica Azure ITS",
+  "main": "src/index.ts",
+  "scripts": {
+    "start-dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "dev": "nodemon",
+    "build": "tsc"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      ".env"
+    ],
+    "exec": "npm run start-dev",
+    "ext": "ts",
+    "ignore": [
+      "node_modules"
+    ]
+  },
+  "author": "Leonardo Ledda",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/cognitiveservices-computervision": "^8.1.0",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/lodash": "^4.14.195",
+    "@types/morgan": "^1.9.4",
+    "@types/supertest": "^6.0.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.1"
+  }
+}
