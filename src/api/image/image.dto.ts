@@ -9,4 +9,7 @@ export class CreateImageDTO {
 
   @IsString()
   language: string
+
+  @IsString()
+  tags: string
 }

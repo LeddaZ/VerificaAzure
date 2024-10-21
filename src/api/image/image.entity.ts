@@ -3,4 +3,5 @@ export class Image {
   url: string
   language: string
   description: string
+  tags: string
 }

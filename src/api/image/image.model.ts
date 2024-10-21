@@ -4,7 +4,8 @@ import { Image } from './image.entity'
 const imageSchema = new mongoose.Schema<Image>({
   url: String,
   language: String,
-  description: Boolean
+  description: String,
+  tags: String
 })
 
 imageSchema.set('toJSON', {
